@@ -30,5 +30,6 @@ describe('Acomplishment dashboard', () => {
     cy.get('.Accomplishment-btn').click()
     cy.get('[data-cy="accomplishment-title-input"]').should('be.empty')
     cy.get('[data-cy="accomplishment-input"]').should('be.empty')
+    cy.get("[type='checkbox']").should('not.be.checked')
   })
 })
